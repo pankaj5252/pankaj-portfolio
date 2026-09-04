@@ -17,6 +17,7 @@ const projects = [
     ],
     type: "AI PLATFORM",
   },
+
   {
     number: "02",
     category: "AI · AUTOMATION",
@@ -34,6 +35,7 @@ const projects = [
     ],
     type: "AI ASSISTANT",
   },
+
   {
     number: "03",
     category: "FULL STACK · SAAS",
@@ -50,6 +52,60 @@ const projects = [
       "REST APIs",
     ],
     type: "FULL STACK",
+  },
+
+  {
+    number: "04",
+    category: "TRADING · AUTOMATION",
+    title: "Algorithmic Trading & Market Analysis System",
+    description:
+      "Trading-focused system for market analysis, strategy execution and risk management across financial markets, with a focus on Forex and XAUUSD.",
+    technologies: [
+      "Python",
+      "Forex",
+      "XAUUSD",
+      "Market Analysis",
+      "Trading Strategy",
+      "Risk Management",
+      "Automation",
+    ],
+    type: "TRADING SYSTEM",
+  },
+
+  {
+    number: "05",
+    category: "TRADING · BOT",
+    title: "Automated Trading Bot",
+    description:
+      "Rule-based trading automation system designed to execute predefined trading strategies, manage risk and analyze market conditions while reducing manual execution.",
+    technologies: [
+      "Python",
+      "Trading Automation",
+      "Strategy Logic",
+      "Risk Management",
+      "Forex",
+      "XAUUSD",
+      "Backtesting",
+    ],
+    type: "TRADING BOT",
+  },
+
+  {
+    number: "06",
+    category: "TRADINGVIEW · TECHNICAL ANALYSIS",
+    title: "TradingView Custom Indicators",
+    description:
+      "Custom TradingView indicators designed to visualize market structure, identify trading setups and support technical analysis across Forex and XAUUSD markets.",
+    technologies: [
+      "TradingView",
+      "Pine Script",
+      "Technical Analysis",
+      "Market Structure",
+      "Price Action",
+      "Forex",
+      "XAUUSD",
+    ],
+    type: "MARKET INDICATOR",
   },
 ];
 
@@ -72,6 +128,7 @@ const Projects = () => {
     >
       {/* Background */}
       <div className="pointer-events-none absolute inset-0">
+        {/* Grid */}
         <div
           className="absolute inset-0 opacity-[0.025]"
           style={{
@@ -81,14 +138,15 @@ const Projects = () => {
           }}
         />
 
+        {/* Cyan Glow */}
         <div className="absolute left-[-200px] top-1/3 h-[500px] w-[500px] rounded-full bg-cyan-500/[0.035] blur-[150px]" />
 
-        <div className="absolute right-[-200px] bottom-0 h-[500px] w-[500px] rounded-full bg-violet-500/[0.03] blur-[150px]" />
+        {/* Violet Glow */}
+        <div className="absolute bottom-0 right-[-200px] h-[500px] w-[500px] rounded-full bg-violet-500/[0.03] blur-[150px]" />
       </div>
 
-      {/* Container */}
+      {/* Main Container */}
       <div className="relative mx-auto max-w-[1500px]">
-
         {/* Header */}
         <div className="mb-16 flex items-center justify-between border-b border-white/[0.06] pb-6">
           <div className="flex items-center gap-4">
@@ -98,20 +156,21 @@ const Projects = () => {
 
             <span className="h-px w-10 bg-white/20" />
 
-            <span className="text-[9px] uppercase tracking-[0.35em] text-white/50">
+            <span className="text-[9px] uppercase tracking-[0.35em] text-white/60">
               Selected Work
             </span>
           </div>
 
-          <span className="hidden text-[8px] uppercase tracking-[0.3em] text-white/25 sm:block">
-            Projects · Experiments · Solutions
+          <span className="hidden text-[8px] uppercase tracking-[0.3em] text-white/35 sm:block">
+            Software · AI · Trading
           </span>
         </div>
 
         {/* Intro */}
         <div className="mb-16 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-24">
+          {/* Heading */}
           <div>
-            <span className="text-[9px] uppercase tracking-[0.3em] text-white/25">
+            <span className="text-[9px] uppercase tracking-[0.3em] text-white/35">
               What I've Built
             </span>
 
@@ -127,19 +186,92 @@ const Projects = () => {
                 lg:text-6xl
               "
             >
-              Turning ideas
+              Building software.
               <br />
+
               <span className="text-white/35">
-                into products.
+                Analyzing markets.
               </span>
             </h2>
           </div>
 
+          {/* Description */}
           <div className="flex items-end">
-            <p className="max-w-2xl text-sm leading-8 text-white/50 sm:text-base">
-              A selection of full-stack and AI projects focused on solving
-              practical problems through modern engineering, automation and
-              intelligent systems.
+            <p className="max-w-2xl text-sm leading-8 text-white/55 sm:text-base">
+              A selection of software engineering and trading technology
+              projects, combining full-stack development, AI, automation and
+              systematic market analysis across Forex and XAUUSD.
+            </p>
+          </div>
+        </div>
+
+        {/* 50 / 50 Focus */}
+        <div className="mb-12 grid gap-4 sm:grid-cols-2">
+          {/* Development */}
+          <div
+            className="
+              group
+              rounded-2xl
+              border border-white/[0.07]
+              bg-white/[0.025]
+              p-5
+              transition-all
+              duration-500
+              hover:border-cyan-400/20
+              hover:bg-white/[0.04]
+            "
+          >
+            <div className="flex items-center justify-between">
+              <span className="text-[8px] uppercase tracking-[0.3em] text-cyan-400/70">
+                50%
+              </span>
+
+              <span className="text-[8px] uppercase tracking-[0.25em] text-white/25">
+                Development
+              </span>
+            </div>
+
+            <h3 className="mt-4 text-lg font-semibold text-white">
+              Full Stack · AI · Backend
+            </h3>
+
+            <p className="mt-2 text-xs leading-6 text-white/40">
+              Modern web applications, scalable APIs, AI systems and
+              production-ready software.
+            </p>
+          </div>
+
+          {/* Trading */}
+          <div
+            className="
+              group
+              rounded-2xl
+              border border-white/[0.07]
+              bg-white/[0.025]
+              p-5
+              transition-all
+              duration-500
+              hover:border-violet-400/20
+              hover:bg-white/[0.04]
+            "
+          >
+            <div className="flex items-center justify-between">
+              <span className="text-[8px] uppercase tracking-[0.3em] text-violet-400/70">
+                50%
+              </span>
+
+              <span className="text-[8px] uppercase tracking-[0.25em] text-white/25">
+                Trading
+              </span>
+            </div>
+
+            <h3 className="mt-4 text-lg font-semibold text-white">
+              Forex · XAUUSD · Automation
+            </h3>
+
+            <p className="mt-2 text-xs leading-6 text-white/40">
+              Market analysis, trading systems, automation, TradingView
+              indicators and systematic strategies.
             </p>
           </div>
         </div>
@@ -165,7 +297,7 @@ const Projects = () => {
                 lg:p-10
               "
             >
-              {/* Glow */}
+              {/* Card Glow */}
               <div
                 className="
                   pointer-events-none
@@ -183,29 +315,38 @@ const Projects = () => {
                 "
               />
 
-              <div className="relative grid gap-10 lg:grid-cols-[80px_1fr_280px] lg:items-start">
-
+              <div
+                className="
+                  relative
+                  grid
+                  gap-10
+                  lg:grid-cols-[80px_1fr_280px]
+                  lg:items-start
+                "
+              >
                 {/* Number */}
                 <div>
-                  <span className="text-sm font-medium tracking-[0.15em] text-white/25">
+                  <span className="text-sm font-medium tracking-[0.15em] text-white/30">
                     {project.number}
                   </span>
                 </div>
 
                 {/* Main Content */}
                 <div>
+                  {/* Category */}
                   <div className="mb-4 flex flex-wrap items-center gap-3">
-                    <span className="text-[8px] uppercase tracking-[0.3em] text-cyan-400/70">
+                    <span className="text-[8px] uppercase tracking-[0.3em] text-cyan-400/75">
                       {project.category}
                     </span>
 
-                    <span className="h-1 w-1 rounded-full bg-white/20" />
+                    <span className="h-1 w-1 rounded-full bg-white/25" />
 
-                    <span className="text-[8px] uppercase tracking-[0.25em] text-white/25">
+                    <span className="text-[8px] uppercase tracking-[0.25em] text-white/35">
                       {project.type}
                     </span>
                   </div>
 
+                  {/* Title */}
                   <h3
                     className="
                       max-w-3xl
@@ -220,7 +361,8 @@ const Projects = () => {
                     {project.title}
                   </h3>
 
-                  <p className="mt-5 max-w-2xl text-sm leading-7 text-white/45">
+                  {/* Description */}
+                  <p className="mt-5 max-w-2xl text-sm leading-7 text-white/50">
                     {project.description}
                   </p>
 
@@ -236,10 +378,10 @@ const Projects = () => {
                           px-3
                           py-1.5
                           text-[9px]
-                          text-white/50
+                          text-white/55
                           transition-colors
                           duration-300
-                          group-hover:text-white/65
+                          group-hover:text-white/70
                         "
                       >
                         {technology}
@@ -249,17 +391,30 @@ const Projects = () => {
                 </div>
 
                 {/* Right Side */}
-                <div className="flex items-start justify-between lg:flex-col lg:items-end lg:justify-between lg:self-stretch">
-
+                <div
+                  className="
+                    flex
+                    items-start
+                    justify-between
+                    lg:flex-col
+                    lg:items-end
+                    lg:justify-between
+                    lg:self-stretch
+                  "
+                >
+                  {/* Arrow */}
                   <div
                     className="
-                      flex h-14 w-14
-                      items-center justify-center
+                      flex
+                      h-14
+                      w-14
+                      items-center
+                      justify-center
                       rounded-full
                       border border-white/[0.08]
                       bg-white/[0.03]
                       text-lg
-                      text-white/40
+                      text-white/45
                       transition-all
                       duration-500
                       group-hover:rotate-45
@@ -270,8 +425,8 @@ const Projects = () => {
                     ↗
                   </div>
 
-                  <span className="hidden text-[8px] uppercase tracking-[0.3em] text-white/20 lg:block">
-                    View Project
+                  <span className="hidden text-[8px] uppercase tracking-[0.3em] text-white/25 lg:block">
+                    {project.type}
                   </span>
                 </div>
               </div>
@@ -294,7 +449,7 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* Bottom */}
+        {/* Bottom Statement */}
         
       </div>
     </section>

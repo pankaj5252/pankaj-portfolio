@@ -26,63 +26,63 @@ const Footer = () => {
                   Pankaj Kale
                 </p>
 
-                <p className="mt-1 text-[7px] uppercase tracking-[0.3em] text-white/35">
-                  Full Stack · AI Developer
+                <p className="mt-1 text-[7px] uppercase tracking-[0.3em] text-white/40">
+                  Full Stack · AI · Trading
                 </p>
               </div>
             </a>
 
-            <p className="mt-6 max-w-md text-sm leading-7 text-white/40">
-              Building modern web applications, scalable backend systems and
-              AI-powered solutions for real-world problems.
+            <p className="mt-6 max-w-md text-sm leading-7 text-white/45">
+              Full Stack Python & AI Developer with a strong interest in
+              financial markets, trading systems, automation and technology.
             </p>
           </div>
 
           {/* Navigation */}
           <div>
-            <p className="mb-5 text-[8px] font-medium uppercase tracking-[0.3em] text-white/30">
+            <p className="mb-5 text-[8px] font-medium uppercase tracking-[0.3em] text-white/35">
               Navigation
             </p>
 
             <div className="flex flex-col gap-3">
               <a
                 href="#home"
-                className="w-fit text-xs text-white/50 transition-colors duration-300 hover:text-white"
+                className="w-fit text-xs text-white/60 transition-colors duration-300 hover:text-white"
               >
                 Home
               </a>
 
               <a
                 href="#about"
-                className="w-fit text-xs text-white/50 transition-colors duration-300 hover:text-white"
+                className="w-fit text-xs text-white/60 transition-colors duration-300 hover:text-white"
               >
                 About
               </a>
 
               <a
                 href="#skills"
-                className="w-fit text-xs text-white/50 transition-colors duration-300 hover:text-white"
+                className="w-fit text-xs text-white/60 transition-colors duration-300 hover:text-white"
               >
                 Skills
               </a>
 
               <a
                 href="#services"
-                className="w-fit text-xs text-white/50 transition-colors duration-300 hover:text-white"
+                className="w-fit text-xs text-white/60 transition-colors duration-300 hover:text-white"
               >
                 Services
               </a>
 
               <a
                 href="#projects"
-                className="w-fit text-xs text-white/50 transition-colors duration-300 hover:text-white"
+                className="w-fit text-xs text-white/60 transition-colors duration-300 hover:text-white"
               >
                 Projects
               </a>
 
               <a
                 href="#contact"
-                className="w-fit text-xs text-white/50 transition-colors duration-300 hover:text-white"
+                className="w-fit text-xs text-white/60 transition-colors duration-300 hover:text-white"
               >
                 Contact
               </a>
@@ -91,32 +91,47 @@ const Footer = () => {
 
           {/* Connect */}
           <div>
-            <p className="mb-5 text-[8px] font-medium uppercase tracking-[0.3em] text-white/30">
+            <p className="mb-5 text-[8px] font-medium uppercase tracking-[0.3em] text-white/35">
               Connect
             </p>
 
             <div className="flex flex-col gap-3">
+              {/* GitHub */}
               <a
                 href="https://github.com/pankaj5252"
                 target="_blank"
-                rel="noreferrer"
-                className="w-fit text-xs text-white/50 transition-colors duration-300 hover:text-white"
+                rel="noopener noreferrer"
+                className="w-fit text-xs text-white/60 transition-colors duration-300 hover:text-white"
               >
                 GitHub ↗
               </a>
 
+              {/* LinkedIn */}
               <a
-                href="#"
-                className="w-fit text-xs text-white/50 transition-colors duration-300 hover:text-white"
+                href="https://www.linkedin.com/in/pankaj-kale-410893409/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-fit text-xs text-white/60 transition-colors duration-300 hover:text-white"
               >
                 LinkedIn ↗
               </a>
 
+              {/* Email */}
               <a
-                href="mailto:your-email@example.com"
-                className="w-fit text-xs text-white/50 transition-colors duration-300 hover:text-white"
+                href="mailto:pbkale25@gmail.com"
+                className="w-fit text-xs text-white/60 transition-colors duration-300 hover:text-white"
               >
                 Email ↗
+              </a>
+
+              {/* WhatsApp */}
+              <a
+                href="https://wa.me/919021373247"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-fit text-xs text-white/60 transition-colors duration-300 hover:text-white"
+              >
+                WhatsApp ↗
               </a>
             </div>
 
@@ -128,7 +143,7 @@ const Footer = () => {
                 <span className="relative h-1.5 w-1.5 rounded-full bg-emerald-400" />
               </span>
 
-              <span className="text-[8px] uppercase tracking-[0.2em] text-white/30">
+              <span className="text-[8px] uppercase tracking-[0.2em] text-white/35">
                 Available for freelance
               </span>
             </div>
@@ -138,28 +153,28 @@ const Footer = () => {
         {/* ================= BOTTOM ================= */}
         <div className="flex flex-col gap-5 pt-7 sm:flex-row sm:items-center sm:justify-between">
           {/* Copyright */}
-          <p className="text-[8px] uppercase tracking-[0.2em] text-white/25">
+          <p className="text-[8px] uppercase tracking-[0.2em] text-white/30">
             © 2026 Pankaj Kale. All rights reserved.
           </p>
 
           {/* Built With */}
-          <div className="flex flex-wrap items-center gap-2 text-[8px] uppercase tracking-[0.2em] text-white/20">
+          <div className="flex flex-wrap items-center gap-2 text-[8px] uppercase tracking-[0.2em] text-white/25">
             <span>Built with</span>
 
-            <span className="text-white/45">
-              React
+            <span className="text-white/50">
+             Pankaj kale
             </span>
 
             <span>·</span>
 
-            <span className="text-white/45">
-              TypeScript
+            <span className="text-white/50">
+              &
             </span>
 
             <span>·</span>
 
-            <span className="text-white/45">
-              Tailwind
+            <span className="text-white/50">
+              Team
             </span>
           </div>
 
@@ -167,7 +182,7 @@ const Footer = () => {
           <a
             href="#home"
             aria-label="Back to top"
-            className="group flex w-fit items-center gap-3 text-[8px] uppercase tracking-[0.2em] text-white/30 transition-colors duration-300 hover:text-white"
+            className="group flex w-fit items-center gap-3 text-[8px] uppercase tracking-[0.2em] text-white/35 transition-colors duration-300 hover:text-white"
           >
             <span>Back to top</span>
 
